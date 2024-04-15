@@ -1,7 +1,10 @@
 #include <curses.h>
-#include <stdio.h>
 
-int main(int argc, char const* argv[]) {
-	printf("Hello\n");
+int main(int argc, char const *argv[]) {
+	initscr();
+	printw("Press any key to continue...");
+	refresh();
+	getch();
+	endwin();
 	return 0;
 }
